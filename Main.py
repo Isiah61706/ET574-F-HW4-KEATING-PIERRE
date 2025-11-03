@@ -1,10 +1,10 @@
 import random
 
-class die: 
+class Die: 
     def __init__(self, sides=6):
         self.sides = sides 
     def roll(self):
-        return random.randint(1,  self.sides)
+        return random.randint(1, self.sides)
 
 
 class DiceGame:
@@ -28,8 +28,8 @@ class DiceGame:
 
 def main():
     game = DiceGame()
-
     print("Welcome to the Dice Game!")
+    
     while True:
         print("\nMenu:")
         print("1. Play a round")
@@ -46,5 +46,6 @@ def main():
             break
         else:
             print("Invalid choice. Please enter 1 or 2.")
+
 if __name__ == "__main__":
     main()
