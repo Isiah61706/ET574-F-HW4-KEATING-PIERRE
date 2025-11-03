@@ -9,8 +9,8 @@ class Die:
 
 class DiceGame:
     def __init__(self):
-        self.die1 = die()
-        self.die2 = die()
+        self.die1 = Die()
+        self.die2 = Die()
     def evaluate_roll(self, total):
         if total in [7, 11]:
             return "Win"
@@ -24,7 +24,7 @@ class DiceGame:
         roll2 = self.die2.roll()
         total = roll1 + roll2
         result = self.evaluate_roll(total)
-        return roll1. roll2. total, result
+        return roll1, roll2, total, result
 
 def main():
     game = DiceGame()
